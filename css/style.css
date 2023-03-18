@@ -279,9 +279,102 @@ header .navbar ul li a:hover {
   background: var(--yellow);
 }
 
+.portfolio .box-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 2rem 0;
+}
+
+.portfolio .box-container .box {
+  height: 20rem;
+  width: 26rem;
+  border-radius: 1rem;
+  margin: 2rem;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.portfolio .box-container .box img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.portfolio .box-container .box:hover img {
+  transform: scale(1.2);
+}
+
+.contact .row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.contact .row .content {
+  flex: 1 1 30rem;
+  padding: 4rem;
+  padding-bottom: 0;
+}
+
+.contact .row form {
+  flex: 1 1 45rem;
+  padding: 2rem;
+  margin: 2rem;
+  margin-bottom: 4rem;
+}
+
+.contact .row form .box {
+  padding: 1rem;
+  margin: 1rem 0;
+  background: #333;
+  color: #fff;
+  text-transform: none;
+  font-size: 1.7rem;
+  width: 100%;
+}
+
+.contact .row form .box:placeholder {
+  text-transform: capitalize;
+}
+
+.contact .row form .message {
+  height: 15rem;
+  resize: none;
+}
+.contact .row .content .title {
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 3rem;
+  padding-bottom: 2rem;
+}
+
+.contact .row .content .info h3 {
+  display: flex;
+  align-items: center;
+  font-size: 2rem;
+  color: #eee;
+  padding: 1rem;
+  font-weight: normal;
+}
+
+.contact .row .content .info h3 i {
+  padding-right: 1rem;
+  color: var(--yellow);
+}
+
+.top {
+  position: fixed;
+  bottom: 1.5rem;
+  right: 1.5rem;
+  z-index: 100;
+  display: none;
+}
 /* media queries */
 
-@media screen and (max-wigth: 1200px) {
+@media screen and (max-device-width: 1200px) {
   html {
     font-size: 55%;
   }
@@ -289,7 +382,7 @@ header .navbar ul li a:hover {
     padding: 1rem 4rem;
   }
 }
-@media screen and (max-wigth: 991px) {
+@media screen and (max-device-width: 991px) {
   header {
     left: -120%;
   }
@@ -303,14 +396,13 @@ header .navbar ul li a:hover {
     padding: 0;
   }
 }
-
-@media screen and (max-wigth: 768px) {
+@media screen and (max-device-width: 768px) {
   html {
     font-size: 50%;
   }
 }
 
-@media screen and (max-wigth: 400px) {
+@media screen and (max-device-width: 400px) {
   header {
     width: 100vw;
   }
@@ -322,5 +414,11 @@ header .navbar ul li a:hover {
   }
   .education .box-container .box {
     width: 100%;
+  }
+  .portfolio .box-container .box {
+    width: 100%;
+  }
+  .contact .row form {
+    margin: 3rem 0;
   }
 }
