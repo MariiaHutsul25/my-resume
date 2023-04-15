@@ -309,7 +309,7 @@ h2{
 }
 
 .portfolio .box-container .box:hover img {
-  transform: scale(1.2);
+  transform: scale(1.1);
 }
 
 .portfolio .box-container .portfolio-big-box p{
