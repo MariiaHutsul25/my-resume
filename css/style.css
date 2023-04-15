@@ -278,11 +278,26 @@ header .navbar ul li a:hover {
   padding: 2rem 0;
 }
 
-.portfolio .box-container .box {
-  height: 20rem;
-  width: 26rem;
-  border-radius: 1rem;
+h2{
+  margin: 0rem;
+  padding: 0.5rem;
+  font-size: 2.5rem;
+  color: #f9ca24;
+  font-weight: normal;
+
+}
+.portfolio .box-container .portfolio-big-box{
+  height: 100%;
+  width: 100%;
   margin: 2rem;
+  box-sizing: border-box;
+  justify-content: center;
+  border-radius: 1rem;
+  background-color: #222;
+  
+}
+.portfolio .box-container .box {
+  border-radius: 1rem;
   overflow: hidden;
   cursor: pointer;
 }
@@ -295,6 +310,41 @@ header .navbar ul li a:hover {
 
 .portfolio .box-container .box:hover img {
   transform: scale(1.2);
+}
+
+.portfolio .box-container .portfolio-big-box p{
+  font-size: 1.4rem;
+  color: #eee;
+  padding: 1rem 0;
+  margin-left: 2rem;
+  cursor: pointer;
+}
+
+.description{
+  display: flex;
+ flex-direction: row;
+ justify-content: space-between;
+ align-items: center;
+}
+
+.description-btn{
+  margin-right: 2rem;
+  padding: 0.4rem 2rem;
+  background: #333;
+  color: #fff;
+  cursor: pointer;
+  margin-top: 1rem;
+  font-size: 2rem;
+  border-radius: 5rem;  
+}
+
+.description-btn i {
+  padding: 0 0.5rem;
+  font-size: 1.8rem;
+}
+
+.description-btn:hover {
+  background: var(--yellow);
 }
 
 .contact .row {
@@ -400,13 +450,13 @@ header .navbar ul li a:hover {
   .heading {
     margin: 0 3rem;
   }
-
-  .about .row .counter .box {
-    width: 100%;
-  }
   .education .box-container .box {
     width: 100%;
   }
+  .portfolio .box-container .portfolio-big-box{
+    width: 100%;
+  }
+
   .portfolio .box-container .box {
     width: 100%;
   }
