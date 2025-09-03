@@ -16,11 +16,11 @@ This project is designed as an online CV with smooth scrolling, responsive menu,
 
 ## 📂 Project Structure
 
-project-folder/
-│── index.html # Main HTML file
-│── style.css # Stylesheet
-│── main.js # JavaScript logic (menu toggle, scroll, etc.)
-│── README.md # Project description
+project-folder
+│- index.html # Main HTML file
+│-style.css # Stylesheet
+│-main.js # JavaScript logic (menu toggle, scroll, etc.)
+│- README.md # Project description
 
 
 ---
